@@ -3,7 +3,7 @@ app de react para un seguimiento de trabajos...
 
 Aqui dejo el link del deploy:
 
-https://coneddin-testing-prod.herokuapp.com/profile
+https://coneddin-testing-prod.herokuapp.com
 
 Espero que les guste. 
 
