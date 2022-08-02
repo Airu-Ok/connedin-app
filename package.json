@@ -1,0 +1,42 @@
+{
+  "name": "connedin",
+  "version": "1.0.0",
+  "description": "#",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "build-front": "cd front && npm run build",
+    "install-front": "cd front && npm install",
+    "heroku-postbuild": "npm run install-front && npm run build-front",
+    "server": "nodemon server.js --ignore front",
+    "front": "npm start --prefix front",
+    "start": "concurrently --kill-others-on-fail \" npm run server\" \" npm run front\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.5.1",
+    "helmet": "^5.1.1",
+    "http-status-codes": "^2.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.13",
+    "morgan": "^1.10.0",
+    "validator": "^13.7.0",
+    "xss-clean": "^0.1.1"
+  },
+  "engines": {
+    "node": "14.x"
+  }
+}

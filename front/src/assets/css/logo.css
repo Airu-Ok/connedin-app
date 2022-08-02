@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Kanit:wght@400;700&family=Permanent+Marker&display=swap');
+.img-landing{
+    width: 50px;
+    height: 50px;
+}
+.nav-logo{
+    display: flex;
+}
+.nav-logo h4{
+    color: var(--green-airu);
+    font-size: 40px;
+    margin-left: 10px;
+    font-family: 'Archivo Black', sans-serif;
+}
+.img-main{
+    width: 500px;
+}
+.btn-lading{
+    background: var(--pink-airu);
+}
+.btn-lading:hover{
+    background: var(--green-airu);
+}
